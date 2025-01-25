@@ -1,0 +1,84 @@
+/* Login Page Styling */
+.login-container {
+    max-width: 400px;
+    margin: auto;
+    background: linear-gradient(to right, #f9f9f9, #ffcccc); /* Soft red gradient background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+    /* Header Styling */
+    .login-container h3 {
+        text-align: center;
+        color: #e60000; /* Dark red for the header */
+        margin-bottom: 20px;
+    }
+
+    /* Input Fields Styling */
+    .login-container input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #e60000; /* Red border for input fields */
+        border-radius: 5px;
+        font-size: 14px;
+        box-sizing: border-box;
+        transition: border-color 0.3s ease;
+    }
+
+        /* Input Focus Styling */
+        .login-container input:focus {
+            border-color: #ff6666; /* Lighter red border on focus */
+            outline: none;
+        }
+
+    /* Submit Button Styling */
+    .login-container button {
+        width: 100%;
+        background-color: #ffcccc; 
+        color: white;
+        border: none;
+        padding: 12px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        /* Button Hover Effect */
+        .login-container button:hover {
+            background-color: #ffd800;
+        }
+
+    /* Success and Error Messages */
+    .login-container p {
+        font-size: 14px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+        .login-container p.error {
+            color: #ff4d4d; /* Light red for error */
+        }
+
+        .login-container p.success {
+            color: #000000
+        }
+
+    /* Link for Register */
+    .login-container a {
+        color: #e60000; /* Red color for links */
+        text-decoration: none;
+        font-size: 14px;
+        text-align: center;
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+        /* Link Hover Effect */
+        .login-container a:hover {
+            text-decoration: underline;
+            color: #cc0000; /* Darker red for hover */
+        }

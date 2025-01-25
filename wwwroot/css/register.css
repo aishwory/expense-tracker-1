@@ -1,0 +1,94 @@
+/* Container styling */
+.register-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #ffffff, #f9f9f9);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+    /* Heading */
+    .register-container h3 {
+        font-size: 26px;
+        margin-bottom: 25px;
+        color: #333;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    /* Input fields */
+    .register-container input,
+    .register-container select {
+        width: 100%;
+        padding: 12px;
+        margin: 12px 0;
+        border: 2px solid #e0e0e0;
+        border-radius: 6px;
+        font-size: 16px;
+        transition: all 0.3s ease;
+    }
+
+        /* Focus styling for input and select */
+        .register-container input:focus,
+        .register-container select:focus {
+            border-color: #007bff;
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+
+    /* Button styling */
+    .register-container button {
+        width: 100%;
+        padding: 12px;
+        background: linear-gradient(90deg, #4caf50, #3a7f41);
+        border: none;
+        border-radius: 6px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+
+        /* Button hover effect */
+        .register-container button:hover {
+            background: linear-gradient(90deg, #3a7f41, #2f6c36);
+        }
+
+    /* Message styling */
+    .register-container p {
+        margin-top: 15px;
+        font-size: 15px;
+        color: #555;
+    }
+
+        /* Success and Error message styling */
+        .register-container p.success {
+            color: #4caf50;
+            font-weight: 600;
+        }
+
+        .register-container p.error {
+            color: #f44336;
+            font-weight: 600;
+        }
+
+    /* Link for login */
+    .register-container a {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
+
+        /* Link hover effect */
+        .register-container a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }

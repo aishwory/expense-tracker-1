@@ -1,0 +1,145 @@
+﻿/* Base styling */
+html, body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #f5f5f5; /* Light gray for background */
+    color: #333; /* Dark gray for text */
+    margin: 0;
+    padding: 0;
+}
+
+a, .btn-link {
+    color: #D36B6B; /* Coral for links */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out; /* Smooth color transition */
+}
+
+    a:hover, .btn-link:hover {
+        color: #B15353; /* Dark coral for hover */
+    }
+
+/* Button styles */
+.btn-primary {
+    color: #fff;
+    background-color: #D36B6B; /* Coral background */
+    border: 2px solid #F0C808; /* Yellow border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+    .btn-primary:hover {
+        background-color: #F0C808; /* Yellow background on hover */
+        color: #B15353; /* Coral text */
+        border-color: #B15353; /* Dark coral border */
+        transform: translateY(-2px); /* Subtle lift effect */
+    }
+
+    .btn-primary:active {
+        transform: translateY(1px); /* Button press effect */
+    }
+
+/* Content sections */
+.content {
+    padding: 1.5rem;
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 12px; /* Rounded corners */
+    margin: 1rem;
+    border: 2px solid #F0C808; /* Yellow border for emphasis */
+    transition: transform 0.3s ease-in-out; /* Hover effect */
+}
+
+    .content:hover {
+        transform: scale(1.02); /* Slight zoom effect on hover */
+    }
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: #D36B6B; /* Coral for headings */
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 2.5rem;
+    border-bottom: 3px solid #F0C808; /* Yellow underline */
+    display: inline-block;
+}
+
+/* Form validation */
+.valid.modified:not([type=checkbox]) {
+    outline: 2px solid #F0C808; /* Yellow outline for valid inputs */
+}
+
+.invalid {
+    outline: 2px solid #DC3545; /* Red outline for invalid inputs */
+}
+
+.validation-message {
+    color: #DC3545; /* Red for validation messages */
+    font-style: italic;
+}
+
+/* Error UI */
+#blazor-error-ui {
+    background: #F8D7DA; /* Light red background */
+    color: #721C24; /* Dark red text */
+    bottom: 0;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+    left: 0;
+    padding: 0.6rem 1.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+    #blazor-error-ui .dismiss {
+        cursor: pointer;
+        position: absolute;
+        right: 0.75rem;
+        top: 0.5rem;
+    }
+
+/* Utility classes */
+.shadow {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rounded {
+    border-radius: 12px;
+}
+
+.text-dark {
+    color: #333;
+}
+
+.text-light {
+    color: #fff;
+}
+
+.bg-dark {
+    background-color: #343A40;
+    color: #fff;
+}
+
+.bg-light {
+    background-color: #F8F9FA;
+    color: #333;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}

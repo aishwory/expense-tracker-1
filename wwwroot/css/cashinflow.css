@@ -1,0 +1,102 @@
+/* Container styling */
+.form-container {
+    width: 100%;
+    max-width: 600px; /* Maximum width for larger screens */
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #FF6F61; /* Bright coral border */
+    border-radius: 10px;
+    background-color: #FFF8E7; /* Bright warm cream background */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow for depth */
+}
+
+/* Section heading */
+h2, h3 {
+    text-align: center;
+    color: #FF6F61; /* Bright coral for headings */
+    margin-bottom: 20px;
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+    .form-group label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 5px;
+        color: #444; /* Neutral dark color for label text */
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #FFB86F; /* Soft orange border */
+        border-radius: 6px;
+        box-sizing: border-box;
+        background-color: #FFF1DC; /* Soft orange-tinted background */
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        color: #333; /* Ensure text is visible */
+    }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: #FF6F61; /* Bright coral focus border */
+            box-shadow: 0 0 10px rgba(255, 111, 97, 0.7); /* Vibrant coral glow */
+        }
+
+/* Button group styling */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+    .button-group button {
+        width: 48%;
+        padding: 12px;
+        border: none;
+        border-radius: 6px;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        color: white; /* Ensure text visibility */
+    }
+
+        .button-group button:hover {
+            transform: scale(1.02);
+        }
+
+/* Add button styling */
+.add-btn {
+    background-color: #4CAF50; /* Bright green background */
+    color: #fff; /* White text */
+}
+
+    .add-btn:hover {
+        background-color: #388E3C; /* Darker bright green on hover */
+    }
+
+/* Cancel button styling */
+.cancel-btn {
+    background-color: #FF5252; /* Bright red background */
+    color: white;
+}
+
+    .cancel-btn:hover {
+        background-color: #E53935; /* Slightly darker bright red on hover */
+    }
+
+/* Status message styling */
+.message {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #FF6F61; /* Bright coral for success messages */
+    font-size: 18px;
+}

@@ -1,0 +1,101 @@
+/* Container styling */
+.form-container {
+    width: 100%;
+    max-width: 600px; /* Max width for larger screens */
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ffcc00; /* Bright yellow border */
+    border-radius: 10px;
+    background-color: #ffffff; /* Bright white background */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Section heading */
+h2, h3 {
+    text-align: center;
+    color: #ff5722; /* Bright orange for headings */
+    margin-bottom: 20px;
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+    .form-group label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 8px;
+        color: #333333; /* Dark text for visibility */
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ffcc00; /* Bright yellow border */
+        border-radius: 6px;
+        background-color: #f9f9f9; /* Light gray background */
+        box-sizing: border-box;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: #ff5722; /* Bright orange focus border */
+            box-shadow: 0 0 8px rgba(255, 87, 34, 0.5); /* Orange glow */
+        }
+
+/* Button group styling */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+    .button-group button {
+        width: 48%;
+        padding: 12px;
+        border: none;
+        border-radius: 6px;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        color: white; /* Ensure text visibility */
+    }
+
+        .button-group button:hover {
+            transform: scale(1.02);
+        }
+
+/* Add button styling */
+.add-btn {
+    background-color: #4CAF50; /* Bright green background */
+    color: #ffffff; /* White text */
+}
+
+    .add-btn:hover {
+        background-color: #388E3C; /* Darker green on hover */
+    }
+
+/* Cancel button styling */
+.cancel-btn {
+    background-color: #F44336; /* Bright red background */
+    color: white;
+}
+
+    .cancel-btn:hover {
+        background-color: #D32F2F; /* Darker red on hover */
+    }
+
+/* Status message styling */
+.message {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #ff5722; /* Bright orange for success messages */
+    font-size: 18px;
+}
